@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
 Copyright 2016 IBM Corp.
 
@@ -14,13 +14,22 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<mfp:adapter name="JavaAdapter"
+<mfp:adapter name="UsingJavaInJavaScriptAdapters"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:mfp="http://www.ibm.com/mfp/integration"
 	xmlns:http="http://www.ibm.com/mfp/integration/http">
 
-	<displayName>JavaAdapter</displayName>
-	<description>JavaAdapter</description>
+	<displayName>UsingJavaInJavaScriptAdapters</displayName>
+	<description>UsingJavaInJavaScriptAdapters</description>
+	<connectivity>
+		<connectionPolicy xsi:type="http:HTTPConnectionPolicyType">
+			<protocol>http</protocol>
+			<domain>rss.cnn.com</domain>
+			<port>80</port>
+		</connectionPolicy>
+	</connectivity>
 
-	<JAXRSApplicationClass>com.sample.adapter.JavaAdapterApplication</JAXRSApplicationClass>
+	<procedure name="addTwoIntegers"/>
+	<procedure name="subtractTwoIntegers"/>
+
 </mfp:adapter>

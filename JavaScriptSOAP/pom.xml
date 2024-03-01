@@ -15,14 +15,14 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.sample</groupId>
-	<artifactId>JavaAdapter</artifactId>
+	<artifactId>JavaScriptSOAP</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>adapter</packaging>
-	<name>JavaAdapter</name>
+	<name>JavaScriptSOAP</name>
 
 	<dependencies>
 		<dependency>
@@ -31,27 +31,17 @@ limitations under the License.
 			<scope>provided</scope>
 			<version>[8.0.0,9.0.0)</version>
 		</dependency>
-		<dependency>
-			<groupId>com.ibm.mfp</groupId>
-			<artifactId>mfp-security-checks-base</artifactId>
-			<version>[8.0.0,9.0.0)</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.wink</groupId>
-			<artifactId>wink-json4j</artifactId>
-			<version>1.4</version>
-		</dependency>
 	</dependencies>
 
 	<properties>
-		<!-- Use UTF-8 as the encoding of the adapter -->
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Use UTF-8 as the encoding of the adapter -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- parameters for deploy mfpf adapter -->
 		<mfpfUrl>http://localhost:9080/mfpadmin</mfpfUrl>
 		<mfpfUser>admin</mfpfUser>
 		<mfpfPassword>admin</mfpfPassword>
-		<mfpfRuntime>mfp</mfpfRuntime>
+    <mfpfRuntime>mfp</mfpfRuntime>
 	</properties>
 
 	<build>
